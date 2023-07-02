@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1><img src="notes.png" alt="">Notes</h1>
+        <button class="btn"><img src="edit.png" alt="">Create Notes</button>
+        <div class="notes-container">
+            <!-- <p contenteditable="true" class="input-box">
+                <img src="delete.png" alt="">
+            </p> -->
+        </div>
+    </div>
+
+    <!-- <script>
+        const notesContainer = document.querySelector('.notes-container')
+        const createBtn = document.querySelector('.btn')
+        let notes = document.querySelectorAll('.input-box')
+
+        createBtn.addEventListener('clicK', () => {
+            let inputBox = document.createElement('p')
+            let img = document.createElement('img')
+            inputBox.className = 'input-box'
+            inputBox.setAttribute('contenteditable', 'true')
+            img.src = 'delete.png';
+            notesContainer.appendChild(inputBox).appendChild(img);
+        })
+
+
+    </script> -->
     <script src="script.js"></script>
 </body>
+
 </html>
